@@ -14,13 +14,7 @@ const { roles} = require("../middleware/rolecheck")
 
 
 router.post("/",async (req, res) => {
-    //const { name, email, phone, role } = req.body;
-    //const userExist = await Test.findOne({ email });
-  
-    //if (userExist) {
-      //res.status(400);
-      //throw new Error("User Already Exists");
-    //}
+    
   
     const user = await Test.create({
       id:req.body.id,    
